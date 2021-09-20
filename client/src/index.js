@@ -5,6 +5,10 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App/App';
 
+//Added for firebase
+import './config/firebase-config';
+
+
 render((
     <BrowserRouter>
         <App/>

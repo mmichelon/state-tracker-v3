@@ -13,6 +13,13 @@ app.get('/api/getList', (req,res) => {
 	console.log('Sent list of items');
 });
 
+// An api endpoint that returns a empty string for username
+app.get('/api/getUser', (req,res) => {
+	var user = "UserName input here";
+	res.json(user);
+	console.log('Sent list of items');
+});
+
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{
 	res.sendFile(path.join(__dirname+'/client/build/index.html'));
