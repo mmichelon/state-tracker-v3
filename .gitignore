@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Ignore files with sensitive data
 firebase-config.js
+
+# Ignore Mode modules
