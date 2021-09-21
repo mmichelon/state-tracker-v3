@@ -54,6 +54,11 @@ class Login extends Component {
     document.title = `UserName: ${this.state.userName}`;
   }
 
+  // Retrieves the list of items from the Express app
+  goToList = () => {
+    fetch('/api/goToList');
+  }
+
   // function GoogleInfo(){
   render() {
 
@@ -95,6 +100,7 @@ class Login extends Component {
           this.setState({ loggedIn: 100 });
           this.setState({ userName: "Unable to Log in" });
 
+          this.goToList();
         });
     };
 

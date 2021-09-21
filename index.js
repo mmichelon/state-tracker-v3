@@ -13,11 +13,9 @@ app.get('/api/getList', (req,res) => {
 	console.log('Sent list of items');
 });
 
-// An api endpoint that returns a empty string for username
-app.get('/api/getUser', (req,res) => {
-	var user = "UserName input here";
-	res.json(user);
-	console.log('Sent list of items');
+
+app.post('/api/goToList', function(req, res){
+    res.redirect('/list');
 });
 
 // Handles any requests that don't match the ones above
